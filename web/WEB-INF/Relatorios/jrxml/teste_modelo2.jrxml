@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="teste_modelo2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6"/>
+	<queryString>
+		<![CDATA[select p.descricao as produto_desc, p.valor, tp.descricao as tipo_produto_desc, f.descricao as fornecedor_desc from produto  p
+left join tipo_produto  tp on (p.tipo_produto_id = tp.id)
+left join fornecedor f on (p.fornecedor_id = f.id)]]>
+	</queryString>
+	<field name="produto_desc" class="java.lang.String"/>
+	<field name="valor" class="java.math.BigDecimal"/>
+	<field name="tipo_produto_desc" class="java.lang.String"/>
+	<field name="fornecedor_desc" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="126" height="20"/>
+				<textElement/>
+				<text><![CDATA[ContFinan - modelo teste]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="0" width="283" height="20"/>
+				<textElement/>
+				<text><![CDATA[modelo 1 - todos os produtos com seus fornecedores e tipo.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<line>
+				<reportElement x="119" y="0" width="1" height="61"/>
+			</line>
+			<line>
+				<reportElement x="364" y="0" width="1" height="61"/>
+			</line>
+			<line>
+				<reportElement x="247" y="0" width="1" height="61"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Produto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Do Produto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fornecedor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="30"/>
+			</rectangle>
+			<line>
+				<reportElement x="119" y="1" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="364" y="1" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="247" y="1" width="1" height="30"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="4" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{produto_desc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="4" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tipo_produto_desc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="4" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fornecedor_desc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="4" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

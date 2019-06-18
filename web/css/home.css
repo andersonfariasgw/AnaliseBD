@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/02/2017, 17:42:26
+    Author     : anderson
+*/
+
+.top-screen{
+    top:-10px;
+    left:-10px;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 101%;
+    height: 90px;
+    background-color: #00cc00;
+}
+
+.menu-mais{
+    background-image: url("../imagens/menu_mais.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    z-index: 9000;
+    background-size: 100px 200px;
+}
+
+.menu-home-menus{
+    float: left;
+    background-color: #cccccc;
+    width: 600px;
+    height: 500px;
+    min-width: 600px;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.menu-home-menus-clicked{
+    background-color: blue;
+    width: 600px;
+    height: 500px;
+    min-width: 600px;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+/*.menu-mais:hover{
+    animation: hoverText 1s;
+}*/
+
+@keyframes hoverText{
+    0%   {margin-left: -600px;}
+    100% {margin-left: 0px;}
+}
+/*
+.menu-home-label:hover .menu-home-menus{
+    animation: hoverText 1s;
+}*/
+
+.menu-home-labels{
+    width: 40px;
+    height: 100px;
+    color: red;
+    background-color: white;
+    margin-right: -40px;
+}
+
+.menu-home-text{
+    float: right;
+    width: 20px;
+    height: 100px;
+    color: red;
+    font-size: 1.5em;
+    margin-right: -20px;
+}
+
+.menu-home-container{
+    width: 600px;
+    height: 500px;
+    min-width: 600px;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+        
+}
+
+.menu-home-ul-nome-menu{
+    position: absolute;
+    top: -20px;
+    list-style-type: none;
+    cursor: pointer;
+    border-top:1px solid black;  
+    border-left: 0px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.menu-home-ul-nome-menu label{
+    margin-left: -33px
+}
+
+.menu-home-ul-nome-menu li{
+    margin-top: -7px;
+}
+
+.menu-home-mais{
+    width: 50px;
+    height: 50px;
+}
+
+.label-menu{
+    top: 5px;
+    margin-left: 40%;
+    font-size: 2em;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul li:first-child{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+/*.menu-home-menus label:focus,label:hover {
+    transform:scale(1.1,1.1);
+    margin-left: 15%;
+
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}*/
+
+.menu-home-menus-titulo{
+    margin-top: 15px;
+    margin-left: 5%;
+}
+    
+.menu-home-menus-titulo-first{
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: default;
+}
+
+.menu-home-menus-menu{
+    cursor: pointer;
+}
+
+
+.menu-home-menus-menu:hover{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    list-style-type: circle;
+}
+
+.menu-home-menus-menu:hover:before {
+  content: "";
+  display: inline-block;
+  /*vertical-align: middle;*/
+  margin-right: 10px;
+  /*width: 0;*/ 
+  /*height: 0;*/ 
+ 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid green;
+}  
+
+
+@keyframes animacaoBolada {
+   0%   { 
+      background: black;
+      width: 100px;
+   }
+   25%  { background: green; }
+   50%  { background: blue; }
+   75%  { background: red; }
+   100% { 
+      background: yellow;
+      width: 200px;
+   }
+}
+
+/**
+*** Seta para ESQUERDA
+**/
+.seta-esquerda:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+ 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid blue; 
+}
+ 
+/**
+*** Seta para DIREITA
+**/
+.seta-direita:before {
+  content: "";
+  display: inline-block;
+  /*vertical-align: middle;*/
+  margin-right: 10px;
+  /*width: 0;*/ 
+  /*height: 0;*/ 
+ 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid green;
+}   
+ 
+/**
+*** Seta para CIMA
+**/
+.seta-cima:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+ 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+ 
+/**
+*** Seta para BAIXO
+**/
+.seta-baixo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+ 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #f00;
+}
