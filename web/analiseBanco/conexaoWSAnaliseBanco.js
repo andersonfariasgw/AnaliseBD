@@ -140,6 +140,7 @@ function caregarV(view) {
             SQLVIEW.html("");
             jQuery("#nome_da_table").text(view);
             jQuery("#nome-view-edit").text(view);
+            jQuery("#nome-tabela-edit").text(view);
 
             for (var i = 0; i < teste.length; i++) {
                 var column = teste[i];
@@ -367,6 +368,19 @@ jQuery(document).ready(function () {
         });
     });
 
+//    jQuery("#edit-table").on('click', function(){
+//        
+//    });
+//    
+//    jQuery("#submit-edit-tabela").on('click', function(){
+//        let tabela = jQuery("#nome-tabela-edit").html();
+//        let tipoAlteracao = jQuery("#tipo-alteracao-tabela option:selected").val();
+//        let campoAlteracao = jQuery("#campo-alteracao-tabela option:selected").val();
+//        if (tabela.includes("delete") || tabela.includes(" ") ) {
+//            
+//        }
+//        "alter table " + tabela + " " + tipoAlteracao + campoAlteracao + "";
+//    });
 
 });
 

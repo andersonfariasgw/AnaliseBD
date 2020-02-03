@@ -230,5 +230,56 @@
             </div>
                 
         </div>
+        
+        
+<!--        <div class="quadro central" id="edit-table-quadro" style="display: ">
+            <div class="head">
+                EDITANDO A SQL (<label id="nome-view-edit"></label>)
+                    <div class="close-edit-sql">
+                        <a id="fechar" style="cursor: pointer;">fechar</a>
+                    </div>
+            </div>
+            <div class="body">
+                <select id='tipo-alteracao-tabela'>
+                    <option value='add'>Criar</option>
+                </select>
+                <br>
+                <select id='campo-alteracao-tabela'>
+                    <option value='column'>Coluna</option>
+                </select>
+                <br>
+                Nome:
+                <input type="text" id="nome-alteracao-tabela">
+                <br>
+                Tipo: 
+                <select id="tipo-campo-tabela">
+                    <option value='varchar'>Varchar</option>
+                </select>
+                Tamanho:
+                <input type='text' id='tamanho-alteracao-tabela'>
+                <br>
+                Default:
+                <input type='text' id='defaults-alteracao-tabela'>
+            </div>
+            <div class="foot central">
+                <input type="button" value="SUBMIT" id="submit-edit-tabela">
+            </div>
+                
+        </div>-->
+        
+        
+        <!--<input type="button" value='editar tabela' id='edit-table'>-->
+        
+        
+<!--        <table style="border: 1px solid black;">
+            <thead>
+                <tr >
+                    <th style='background-color: #ddddff'>Coluna</th>
+                    <th style='background-color: #ddddff'>Tipo</th>
+                    <th style='background-color: #ddddff'>Not Null ?</th>
+                    <th style='background-color: #ddddff'>Comentário</th>
+                </tr>
+            </thead>
+        </table>-->
     </body>
 </html>

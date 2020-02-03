@@ -376,6 +376,13 @@ html,body, .quadroTables, .info-tables{
     margin-top: 25px;
 }
 
+#submit-edit-tabela{
+    border: 0;
+    background: none;
+    margin-left: 50%;
+    margin-top: 25px;
+}
+
 label[tabela] {
     cursor: pointer;
     color: blue;
